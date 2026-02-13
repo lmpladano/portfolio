@@ -56,12 +56,12 @@ export const content: PortfolioContent = {
   },
   projects: [
     {
-      title: "Project One",
+      title: "CodeChimp",
       description: "1–2 sentences: what it is + who it’s for + why it matters.",
-      image: "/images/project-one.jpg",
+      image: "/images/project-one.png",
       tech: ["React", "TypeScript", "Node"],
       highlights: ["Fast search", "Auth", "Responsive UI"],
-      liveUrl: "https://your-live-link.com",
+      liveUrl: "https://codechimp-lmpladano.netlify.app/",
       repoUrl: "https://github.com/you/repo",
     },
     {

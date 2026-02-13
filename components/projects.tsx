@@ -22,7 +22,7 @@ export function Projects() {
                 alt={project.title}
                 fill
                 sizes="(max-width: 1024px) 100vw, 900px"
-                className="object-cover transition-transform duration-500 ease-editorial hover:scale-[1.012]"
+                className="object-cover object-top transition-transform duration-500 ease-editorial hover:scale-[1.012]"
               />
             </div>
 
