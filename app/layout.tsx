@@ -1,21 +1,8 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
 
 import "./globals.css";
 
 import { content } from "@/lib/content";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap"
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-serif",
-  display: "swap"
-});
 
 export const metadata: Metadata = {
   title: `${content.site.name} | ${content.site.role}`,
@@ -28,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+    <html lang="en">
       <body className="bg-background font-sans text-foreground antialiased">{children}</body>
     </html>
   );

@@ -9,15 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#f5f5f0",
-        foreground: "#13161a",
-        muted: "#5a6370",
-        border: "#d7dbe0",
-        card: "#ffffff",
-        accent: "#101828"
-      },
-      boxShadow: {
-        editorial: "0 14px 38px rgba(16, 24, 40, 0.08)"
+        background: "#0a0a0a",
+        foreground: "#f5f5f5",
+        muted: "#b4b4b4",
+        border: "#2a2a2a",
+        card: "#111111",
+        accent: "#ffffff"
       },
       transitionTimingFunction: {
         editorial: "cubic-bezier(0.2, 0.8, 0.2, 1)"

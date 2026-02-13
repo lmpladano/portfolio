@@ -43,7 +43,7 @@ Update that file to change:
 - About copy/photo
 - Project cards
 - Experience entries
-- Hobbies cards
+- Agency work cards
 
 ## Replace Images
 
@@ -53,11 +53,12 @@ Put your images in:
 
 Then ensure paths in `lib/content.ts` match, for example:
 
-- `/images/me.jpg`
+- `/images/me.png`
 - `/images/project-one.jpg`
 - `/images/project-two.jpg`
-- `/images/guitar.jpg`
-- `/images/figures.jpg`
+- `/images/agency-work/icuc-social.png`
+- `/images/agency-work/simple-loose-leaf.png`
+- `/images/agency-work/social-crm-strategy.png`
 
 ## Project Structure
 

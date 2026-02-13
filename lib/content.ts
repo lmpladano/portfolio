@@ -30,7 +30,7 @@ export type PortfolioContent = {
     workMode: string;
     description: string;
   }>;
-  hobbies: Array<{
+  agencyWork: Array<{
     title: string;
     description: string;
     image: string;
@@ -46,13 +46,13 @@ export const content: PortfolioContent = {
     links: [
       { label: "GitHub", url: "https://github.com/lmpladano" },
       { label: "LinkedIn", url: "https://www.linkedin.com/in/luis-pladano" },
-      { label: "Email", url: "mailto:you@email.com" }
-    ]
+      { label: "Email", url: "mailto:you@email.com" },
+    ],
   },
   about: {
-    photo: "/images/me.jpg",
+    photo: "/images/me.png",
     shortBio:
-      "I am a Full-stack Developer with hands-on experience building scalable, production-ready web applications using React, Node.js, JavaScript, Express, and PostgreSQL. At WrightIMC, I delivered custom WordPress and headless WordPress + React solutions end to end, including architecture, development, deployment, API integrations, and performance optimization. I combine strong technical execution with client-facing communication and project ownership to ship clean, maintainable software that solves real business problems."
+      "I am a Full-stack Developer with hands-on experience building scalable, production-ready web applications using React, Node.js, JavaScript, Express, and PostgreSQL. At WrightIMC, I delivered custom WordPress and headless WordPress + React solutions end to end, including architecture, development, deployment, API integrations, and performance optimization. I combine strong technical execution with client-facing communication and project ownership to ship clean, maintainable software that solves real business problems.",
   },
   projects: [
     {
@@ -62,17 +62,18 @@ export const content: PortfolioContent = {
       tech: ["React", "TypeScript", "Node"],
       highlights: ["Fast search", "Auth", "Responsive UI"],
       liveUrl: "https://your-live-link.com",
-      repoUrl: "https://github.com/you/repo"
+      repoUrl: "https://github.com/you/repo",
     },
     {
-      title: "Project Two",
-      description: "1–2 sentences: the problem + your solution.",
-      image: "/images/project-two.jpg",
-      tech: ["Next.js", "Postgres", "Tailwind"],
-      highlights: ["Payments", "Dashboard", "Caching"],
-      liveUrl: "https://your-live-link.com",
-      repoUrl: "https://github.com/you/repo"
-    }
+      title: "Tetris 99ish",
+      description:
+        "A hyper-casual browser puzzle game with auth, leaderboard, chat, multiplayer row attacks, and smooth play on desktop and mobile.",
+      image: "/images/project-two.png",
+      tech: ["JavaScript", "Node.js", "Express", "PostgreSQL", "Materialize CSS", "Heroku"],
+      highlights: ["Auth + guest mode", "Realtime chat + multiplayer", "Top-10 leaderboard + persisted scores"],
+      liveUrl: "https://powerful-ravine-73143.herokuapp.com/",
+      repoUrl: "https://github.com/you/repo",
+    },
   ],
   experience: [
     {
@@ -85,19 +86,33 @@ export const content: PortfolioContent = {
       location: "Dallas, Texas, United States",
       workMode: "Remote",
       description:
-        "At WrightIMC, I led the design and development of custom WordPress solutions, ranging from traditional theme-based builds to headless WordPress architectures using React. I owned projects end to end, handling technical planning, development, and deployment while working directly with clients to translate complex business requirements into scalable, high-performance web applications. My work included custom theme and plugin development, API integrations, performance optimization, and tailored solutions for unique technical needs, balancing clean architecture with real-world usability and maintainability."
-    }
+        "At WrightIMC, I led the design and development of custom WordPress solutions, ranging from traditional theme-based builds to headless WordPress architectures using React. I owned projects end to end, handling technical planning, development, and deployment while working directly with clients to translate complex business requirements into scalable, high-performance web applications. My work included custom theme and plugin development, API integrations, performance optimization, and tailored solutions for unique technical needs, balancing clean architecture with real-world usability and maintainability.",
+    },
   ],
-  hobbies: [
+  agencyWork: [
     {
-      title: "Guitar",
-      description: "A line or two about what you’re into (gear, styles, goals).",
-      image: "/images/guitar.jpg"
+      title: "ICUC Social",
+      description:
+        "Agency website work focused on clarity, service communication, and enterprise-ready presentation.",
+      image: "/images/agency-work/icuc-social.png",
     },
     {
-      title: "Legacy iOS Development",
-      description: "I enjoy revisiting classic iOS patterns, refining UIKit fundamentals, and modernizing older app ideas with cleaner architecture.",
-      image: "/images/legacy-ios.jpg"
-    }
-  ]
+      title: "Simple Loose Leaf",
+      description:
+        "E-commerce content and page implementation supporting a product-led tea subscription experience.",
+      image: "/images/agency-work/simple-loose-leaf.png",
+    },
+    {
+      title: "Social CRM & Strategy",
+      description:
+        "Marketing-focused web page build emphasizing messaging hierarchy, conversion flow, and readability.",
+      image: "/images/agency-work/social-crm-strategy.png",
+    },
+    {
+      title: "Gentrifi GPS",
+      description:
+        "Fleet technology website implementation focused on product positioning, trust signals, and strong hero-to-content flow.",
+      image: "/images/agency-work/gentrifi-gps.png",
+    },
+  ],
 };

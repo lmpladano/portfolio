@@ -7,12 +7,12 @@ type SectionHeadingProps = {
 
 export function SectionHeading({ headingId, label, title, subtitle }: SectionHeadingProps) {
   return (
-    <div className="mb-8 flex flex-col gap-2">
-      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted">{label}</p>
-      <h2 id={headingId} className="text-2xl font-semibold leading-tight sm:text-3xl">
+    <div className="mb-10 border-b border-border pb-4 sm:mb-12">
+      <p className="text-[11px] uppercase tracking-[0.22em] text-muted">{label}</p>
+      <h2 id={headingId} className="mt-2 text-3xl leading-tight sm:text-[2.35rem]">
         {title}
       </h2>
-      {subtitle ? <p className="max-w-2xl text-sm text-muted sm:text-base">{subtitle}</p> : null}
+      {subtitle ? <p className="mt-3 max-w-2xl text-base leading-relaxed text-muted">{subtitle}</p> : null}
     </div>
   );
 }

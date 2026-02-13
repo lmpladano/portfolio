@@ -1,56 +1,55 @@
 import Image from "next/image";
 
-import { content } from "@/lib/content";
 import { SectionHeading } from "@/components/section-heading";
+import { content } from "@/lib/content";
 
 export function Projects() {
   return (
-    <section className="border-b border-border py-16 sm:py-20" aria-labelledby="projects-heading">
+    <section className="border-b border-border py-20 sm:py-24" aria-labelledby="projects-heading">
       <SectionHeading
         headingId="projects-heading"
-        label="Projects"
+        label="Selected Work"
         title="Projects"
-        subtitle="A quick look at selected work, built with performance and maintainability in mind."
+        subtitle="Recent client and product work with a focus on usable, scalable implementation."
       />
-      <div className="grid gap-6 md:grid-cols-2">
+
+      <div className="space-y-14">
         {content.projects.map((project) => (
-          <article
-            key={project.title}
-            className="group overflow-hidden rounded-2xl border border-border bg-card shadow-editorial transition-all duration-300 ease-editorial hover:-translate-y-1"
-          >
-            <div className="relative aspect-[16/10] w-full overflow-hidden border-b border-border bg-background">
+          <article key={project.title} className="space-y-5 border-b border-border pb-12 last:border-0 last:pb-0">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-sm bg-card">
               <Image
                 src={project.image}
                 alt={project.title}
                 fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform duration-500 ease-editorial group-hover:scale-[1.03]"
+                sizes="(max-width: 1024px) 100vw, 900px"
+                className="object-cover transition-transform duration-500 ease-editorial hover:scale-[1.012]"
               />
             </div>
-            <div className="space-y-4 p-6">
-              <h3 className="text-xl font-semibold">{project.title}</h3>
-              <p className="text-sm leading-relaxed text-muted sm:text-base">{project.description}</p>
+
+            <div className="space-y-4">
+              <h3 className="text-2xl leading-tight">{project.title}</h3>
+              <p className="max-w-3xl text-base leading-relaxed text-muted">{project.description}</p>
+
               <ul className="flex flex-wrap gap-2" aria-label={`${project.title} technologies`}>
                 {project.tech.map((item) => (
-                  <li
-                    key={item}
-                    className="rounded-full border border-border bg-background px-3 py-1 text-xs font-medium text-foreground"
-                  >
+                  <li key={item} className="border border-border px-2 py-1 text-[11px] uppercase tracking-[0.12em] text-muted">
                     {item}
                   </li>
                 ))}
               </ul>
-              <ul className="list-inside list-disc space-y-1 text-sm text-muted">
+
+              <ul className="space-y-1 text-base text-muted">
                 {project.highlights.map((highlight) => (
-                  <li key={highlight}>{highlight}</li>
+                  <li key={highlight}>• {highlight}</li>
                 ))}
               </ul>
-              <div className="flex gap-3 pt-2">
+
+              <div className="flex gap-5 pt-1 text-base">
                 <a
                   href={project.liveUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full border border-accent bg-accent px-4 py-2 text-sm font-medium text-white transition-colors duration-200 ease-editorial hover:bg-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                  className="font-medium underline decoration-border transition-colors duration-200 ease-editorial hover:text-accent hover:decoration-accent focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                 >
                   Live
                 </a>
@@ -58,7 +57,7 @@ export function Projects() {
                   href={project.repoUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full border border-border px-4 py-2 text-sm font-medium transition-colors duration-200 ease-editorial hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
+                  className="font-medium underline decoration-border transition-colors duration-200 ease-editorial hover:text-accent hover:decoration-accent focus-visible:rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
                 >
                   Repo
                 </a>
