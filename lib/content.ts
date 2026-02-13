@@ -45,7 +45,7 @@ export const content: PortfolioContent = {
     location: "Texas, USA",
     links: [
       { label: "GitHub", url: "https://github.com/lmpladano" },
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/luis-pladano" },
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/luis-pladano-9517ba1a1" },
       { label: "Email", url: "mailto:you@email.com" },
     ],
   },
@@ -57,7 +57,7 @@ export const content: PortfolioContent = {
   projects: [
     {
       title: "CodeChimp",
-      description: "1–2 sentences: what it is + who it’s for + why it matters.",
+      description: "Typing exercises for developers to build coding speed and accuracy under realistic timed practice.",
       image: "/images/project-one.png",
       tech: ["React", "TypeScript", "Node"],
       highlights: ["Fast search", "Auth", "Responsive UI"],
