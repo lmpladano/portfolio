@@ -39,13 +39,16 @@ export type PortfolioContent = {
 
 export const content: PortfolioContent = {
   site: {
-    name: "Luis Pladano",
+    name: "Luis Pladano Cianci",
     role: "Full-stack Developer",
     tagline: "I build clean, fast web apps with great UX.",
     location: "Texas, USA",
     links: [
       { label: "GitHub", url: "https://github.com/lmpladano" },
-      { label: "LinkedIn", url: "https://www.linkedin.com/in/luis-pladano-9517ba1a1" },
+      {
+        label: "LinkedIn",
+        url: "https://www.linkedin.com/in/luis-pladano-9517ba1a1",
+      },
       { label: "Email", url: "mailto:you@email.com" },
     ],
   },
@@ -57,7 +60,8 @@ export const content: PortfolioContent = {
   projects: [
     {
       title: "CodeChimp",
-      description: "Typing exercises for developers to build coding speed and accuracy under realistic timed practice.",
+      description:
+        "Typing exercises for developers to build coding speed and accuracy under realistic timed practice.",
       image: "/images/project-one.png",
       tech: ["React", "TypeScript", "Node"],
       highlights: ["Fast search", "Auth", "Responsive UI"],
@@ -69,8 +73,19 @@ export const content: PortfolioContent = {
       description:
         "A hyper-casual browser puzzle game with auth, leaderboard, chat, multiplayer row attacks, and smooth play on desktop and mobile.",
       image: "/images/project-two.png",
-      tech: ["JavaScript", "Node.js", "Express", "PostgreSQL", "Materialize CSS", "Heroku"],
-      highlights: ["Auth + guest mode", "Realtime chat + multiplayer", "Top-10 leaderboard + persisted scores"],
+      tech: [
+        "JavaScript",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Materialize CSS",
+        "Heroku",
+      ],
+      highlights: [
+        "Auth + guest mode",
+        "Realtime chat + multiplayer",
+        "Top-10 leaderboard + persisted scores",
+      ],
       liveUrl: "https://powerful-ravine-73143.herokuapp.com/",
       repoUrl: "https://github.com/you/repo",
     },
