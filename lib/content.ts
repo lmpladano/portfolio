@@ -39,7 +39,7 @@ export type PortfolioContent = {
 
 export const content: PortfolioContent = {
   site: {
-    name: "Luis Pladano Cianci",
+    name: "Luis Pladano",
     role: "Full-stack Developer",
     tagline: "I build clean, fast web apps with great UX.",
     location: "Texas, USA",
