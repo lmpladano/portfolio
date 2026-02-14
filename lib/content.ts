@@ -49,7 +49,7 @@ export const content: PortfolioContent = {
         label: "LinkedIn",
         url: "https://www.linkedin.com/in/luis-pladano-9517ba1a1",
       },
-      { label: "Email", url: "mailto:you@email.com" },
+      { label: "Email", url: "luispladano1@gmail.com" },
     ],
   },
   about: {
